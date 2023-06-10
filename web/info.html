@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>高达机体</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
+    <link rel="stylesheet" href="./css/info.css">
+    <link rel="stylesheet" href="./css/flash.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <script src="./js/jq.js"></script>
+</head>
+
+<body>
+    <canvas class="canvas-wrap" id="triangle-lost-in-space" resize="true"></canvas>
+
+    <!-- loadding -->
+    <div class="lodding-wrap">
+        <!-- <div class="loadding-div"></div> -->
+        <div class="load-container">
+            <div class="jiazai">加载中...</div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="navbar">
+        <span class="total high-light">GUNDAM</span>
+        <ul class="nav-divide">
+            <li><a id="1" href="./home.html">个人信息</a></li>
+            <li><a id="2" href="./introduce.html">高达资料</a></li>
+            <li><a id="3" href="./total.html">高达总览</a></li>
+            <li><a id="4" href="./info.html">最帅高达机体</a></li>
+            <li><a id="5" href="./bye.html">其他</a></li>
+            <li><a href="./Login.html">退出</a></li>
+        </ul>
+
+    </div>
+    <!-- <div class="container"> -->
+    <div class="app">
+
+        <div class="cardList">
+            <button class="cardList__btn btn btn--left">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-left"></use>
+                    </svg>
+                </div>
+            </button>
+
+            <div class="cards__wrapper">
+                <div class="card current--card">
+                    <div class="card__image">
+                        <img src="./img/飞翼零式高达.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="card next--card">
+                    <div class="card__image">
+                        <img src="./img/自由高达.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="card previous--card">
+                    <div class="card__image">
+                        <img src="./img/00高达.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右按钮 -->
+            <button class="cardList__btn btn btn--right">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </div>
+            </button>
+        </div>
+
+        <!-- 对应的信息 -->
+        <div class="infoList">
+            <div class="info__wrapper">
+                <div class="info current--info">
+                    <h1 class="text name">飞翼零式高达</h1>
+                    <h4 class="text location">机体番号：XXXG-00W0</h4>
+                    <p class="text description">机体高度：16.7m</p>
+                    <p class="text description">体体重量：8吨</p>
+                    <p class="text description">固定武装：光束军刀×2、小型加特林机关炮×2</p>
+                    <p class="text description">选用手部武器：2连装光束步枪</p>
+                    <p class="text description">机师：希罗·尤尔</p>
+                    <p class="text description">登场：《机动战士高达W－无尽的华尔兹》</p>
+                </div>
+
+                <div class="info next--info">
+                    <h1 class="text name">自由高达</h1>
+                    <h4 class="text location">机体番号：ZGMF-X10A</h4>
+                    <p class="text description">机体高度：18.03m</p>
+                    <p class="text description">体体重量：71.5吨</p>
+                    <p class="text description">装备设计：
+                        相转移（Phase Shift）装甲，反中子干扰器，多重锁定系统，核能反应堆</p>
+                    <p class="text description">外挂装备：METEOR UNIT（流星系统）</p>
+                    <p class="text description">机师：基拉·大和</p>
+                    <p class="text description">登场：《机动战士高达SEED》</p>
+                </div>
+
+                <div class="info previous--info">
+                    <h1 class="text name">00高达</h1>
+                    <h4 class="text location">机体番号：GN-0000</h4>
+                    <p class="text description">机体高度：18.3m</p>
+                    <p class="text description">机体重量：54.9吨</p>
+                    <p class="text description">固定武装：GN光束军刀×2；GN剑刃Ⅱ/GN光束步枪Ⅱ×2；GN盾牌×2；零式强化机；GN剑刃Ⅲ</p>
+                    <p class="text description">选用武装：GNR-010 0-RAISER（0升降翼）</p>
+                    <p class="text description">动力装置：双GN太阳炉）</p>
+                    <p class="text description">机师：刹那·F·清英</p>
+                    <p class="text description">登场：《机动战士高达00》</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 对应的背景 -->
+        <div class="app__bg">
+            <div class="app__bg__image current--image">
+                <img src="./img/飞翼零式高达.jpg" alt="" />
+            </div>
+            <div class="app__bg__image next--image">
+                <img src="./img/自由高达.jpg" alt="" />
+            </div>
+            <div class="app__bg__image previous--image">
+                <img src="./img/00高达.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <!-- </div> -->
+
+    <!-- 绘制按钮 -->
+    <svg class="icons" style="display: none;">
+        <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='328 112 184 256 328 400'
+                style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+        </symbol>
+        <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='184 112 328 256 184 400'
+                style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+        </symbol>
+    </svg>
+
+    <!-- partial -->
+    <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
+    <script src="./js/info.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="./js/nav.js"></script>
+    <script type="text/javascript" src="./js/paper-full.min.js"></script>
+    <script type="text/javascript" src="./js/canvas.js"></script>
+</body>
+
+</html>
