@@ -10,7 +10,7 @@ btn_login.addEventListener('click', function () {
         flag.style.opacity = 0;
         container.classList.add('success');
         setTimeout(function () {
-            window.location.href = '../home.html';
+            window.location.href = './home.html';
             sessionStorage.setItem('current', 1);
         }, 1500);
 
