@@ -9,7 +9,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: linear-gradient(to top left, #ffe29f, #ffa99f, #ff719a); */
     overflow: hidden;
     background-image: url(../img/bg3.jpg);
     background-repeat: no-repeat;

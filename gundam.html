@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>高达机体</title>
+    <link rel="stylesheet" href="./css/gundam.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="./js/jq.js"></script>
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/flash.css">
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+
+<body>
+    <canvas class="canvas-wrap" id="triangle-lost-in-space" resize="true"></canvas>
+
+    <!-- loadding -->
+    <div class="lodding-wrap">
+        <!-- <div class="loadding-div"></div> -->
+        <div class="load-container">
+            <div class="jiazai">加载中...</div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="mynavbar">
+        <span class="total high-light" style="font-weight:900;">GUNDAM</span>
+        <ul class="nav-divide">
+            <li><a id="1" href="./home.html">个人信息</a></li>
+            <li><a id="2" href="./introduce.html">高达资料</a></li>
+            <li><a id="3" href="./total.html">高达总览</a></li>
+            <li><a id="4" href="./gundam.html">最帅高达机体</a></li>
+            <li><a id="5" href="./bye.html">其他</a></li>
+            <li><a href="./index.html">退出</a></li>
+        </ul>
+
+    </div>
+    <div class="content">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" style="height: 70%; width: 55%;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" style="height: 100%">
+                <div class="carousel-item active" style="height: 100%;">
+                    <img src="./img/自由高达.jpg" class="d-block w-100" style="border-radius: 5px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>自由高达</h5>
+                        <p>登场：《机动战士高达SEED》</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height: 100%">
+                    <img src="./img/飞翼零式高达.jpg" class="d-block w-100" style="border-radius: 5px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>飞翼零式高达</h5>
+                        <p>登场：《机动战士高达W－无尽的华尔兹》</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height: 100%">
+                    <img src="./img/00高达.jpg" class="d-block w-100" style="border-radius: 5px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>00高达</h5>
+                        <p>登场：《机动战士高达00》</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span style="background-color: black;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span style="background-color: black;" class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div id="info-0" class="card" style="width: 18rem; height: 70%; margin-left: 5px;">
+            <div class="card-body">
+                <h1 class="text name">自由高达</h1>
+                <h4 class="text location">机体番号：ZGMF-X10A</h4>
+                <p class="text description">机体高度：18.03m</p>
+                <p class="text description">机体重量：71.5吨</p>
+                <p class="text description">装备设计：
+                    相转移（Phase Shift）装甲，反中子干扰器，多重锁定系统，核能反应堆</p>
+                <p class="text description">外挂装备：METEOR UNIT（流星系统）</p>
+                <p class="text description">机师：基拉·大和</p>
+                <p class="text description">登场：《机动战士高达SEED》</p>
+                <p></p>
+            </div>
+        </div>
+
+    </div>
+    <div class="image">
+        <img src="./img/自由高达.jpg" alt="" />
+    </div>
+
+</body>
+
+<script src="./js/nav.js"></script>
+<script src="./js/gundam.js"></script>
+<script src="./js/canvas.js"></script>
+<script src="./js/base.js"></script>
+
+</html>

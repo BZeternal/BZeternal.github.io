@@ -10,8 +10,6 @@
 }
 
 .high-light {
-  font-size: 100;
-  font-weight: 550;
   background: #706d6d linear-gradient(-135deg,
       transparent 25%,
       transparent 40%,
@@ -36,7 +34,6 @@
   }
 }
 
-/* 雪花 */
 .canvas-wrap {
   position: fixed;
   top: 66px;
@@ -46,7 +43,7 @@
   right: 0;
 }
 
-.navbar {
+.mynavbar {
   width: 100%;
   height: 8%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -58,31 +55,32 @@
   z-index: 3000;
 }
 
-.navbar:hover {
+.mynavbar:hover {
   box-shadow: 0px 0px 10px 2px white;
   background-color: black;
 }
 
-.total {
+.mynavbar .total {
   font-size: 36px;
   font-weight: 900;
   margin-left: 7%;
   flex: 1.2;
 }
 
-.nav-divide {
+.mynavbar .nav-divide {
   display: flex;
   flex: 1;
   justify-content: space-around;
+  margin: 0px;
 }
 
-.nav-divide li {
+.mynavbar .nav-divide li {
   font-size: clamp(1rem, 0.906rem + 0.5vw, 1.5rem);
   font-weight: bold;
   list-style-type: none;
 }
 
-.nav-divide li:last-child {
+.mynavbar .nav-divide li:last-child {
   margin-left: 10%;
 }
 

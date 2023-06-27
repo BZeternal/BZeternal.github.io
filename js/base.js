@@ -14,7 +14,6 @@
     root.style.setProperty('--bagColor', '#02162b')
   }
 
-  // loadding
   document.onreadystatechange = function () {
     if (document.readyState == 'complete') {
       let opacity = $('.lodding-wrap').css('opacity');
